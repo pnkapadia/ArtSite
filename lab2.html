@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+<body>
+
+<head>
+<title>Advanced Art Work Search</title>
+<link rel="stylesheet" type="text/css" href="lab1-Team22.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+<script type="text/javascript">
+	$(function ()
+	{
+		$('input[name=rbutton1]').change(function() 
+		{
+			var selval = $('input[name=rbutton1]:checked').val();
+			if(selval=='Show')
+			$('#painting1').fadeIn();
+			else
+			$('#painting1').fadeOut();
+		})
+	});
+</script>
+</head>
+
+<form>
+	Search: <input type="text" name="artSearch">
+</form>
+<br>
+
+<select name="genre" >
+	<option value="0">Baroque</option>
+	<option value="1">Renaissance</option>
+	<option value="2">Realism</option>
+</select>
+
+<select name="action">
+	<option value="0">Archive</option>
+	<option value="1">Edit</option>
+	<option value="2">Delete</option>
+	<option value="3">Collection</option>
+</select>
+
+<br><br>
+
+<div class = "tab" style = "overflow-x:auto;">
+<table>
+	<tr>
+		<th width="100px">Choice</th>
+		<th>Paintings</th>
+		<th>Title</th>
+		<th width="150px">Artist</th>
+		<th>Year</th>
+		<th>Genre</th>
+		<th width="300px">Actions</th>
+	</tr>
+	
+	<tr>
+		<td><input type="radio" name="rbutton1" value="0">Fade In<br> 
+			<input type="radio" name="rbutton1" value="0">Fade Out</td>
+		<td><img src="https://fthmb.tqn.com/XJFDjAm85RDkb5tRIX26Rh7fsaU=/1500x1000/filters:fill(auto,1)/LastSupper-58f635443df78ca159f2dd55.jpg" id="painting1" alt="Supper" /></td>
+		<td>The Last Supper</td>
+		<td>Leonardo da Vinci</td>
+		<td>1498</td>
+		<td>Christian Art/History/Renaissance</td>
+		<td>
+			<div class="btn-group">
+				<button type="button" class="btn btn-primary btn-sm">Archive</button>
+				<button type="button" class="btn btn-primary btn-sm">Edit</button>
+				<button type="button" class="btn btn-primary btn-sm">Delete</button>
+				<button type="button" class="btn btn-primary btn-sm">Collection</button>
+			</div>
+		</td>
+	</tr>
+	
+	<tr>
+		<td><input type="radio" name="rbutton" value="1"></td>
+		<td><img src="https://sep.yimg.com/ty/cdn/madisonartshop/most-famous-paintings-2.jpg?t=1515400502&" alt="Night" /></td>
+		<td>The Starry Night</td>
+		<td>Vincent van Gogh</td>
+		<td>1889</td>
+		<td>Landscape/Post-Impressionism/Modern</td>
+		<td>
+			<div class="btn-group">
+				<button type="button" class="btn btn-primary btn-sm">Archive</button>
+				<button type="button" class="btn btn-primary btn-sm">Edit</button>
+				<button type="button" class="btn btn-primary btn-sm">Delete</button>
+				<button type="button" class="btn btn-primary btn-sm">Collection</button>
+			</div>
+		</td>
+	</tr>
+	
+	<tr>
+		<td><input type="radio" name="rbutton" value="2"></td>
+		<td><img src="https://images.fineartamerica.com/images-medium-large-5/the-wedding-feast-at-cana-veronese.jpg" alt="Wedding" /></td>
+		<td>Wedding at Cana</td>
+		<td>Paolo Veronses</td>
+		<td>1563</td>
+		<td>Christian Art/History/Renaissance</td>
+		<td>
+			<div class="btn-group">
+				<button type="button" class="btn btn-primary btn-sm">Archive</button>
+				<button type="button" class="btn btn-primary btn-sm">Edit</button>
+				<button type="button" class="btn btn-primary btn-sm">Delete</button>
+				<button type="button" class="btn btn-primary btn-sm">Collection</button>
+			</div>
+		</td>
+	</tr>
+
+</table>
+</div>
+
+</body>
+</html>

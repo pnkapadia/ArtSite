@@ -1,0 +1,26 @@
+CPS 630
+Assignment 2 Iteration 1
+
+Nishita Acharya - 500697434
+Louise Marquez - 500683572
+Prachi Kapadia - 500692110
+
+
+
+Our team improved our simple Art Gallery webpage by adding mroe features such as Blogs, list of Museums and also a shopping cart wherein visitors can purchase the artworks. 
+We used Bootstrap to layout our webpage and do the header. Through the drop down menu on the header, you can access/open up our the blog page, creators page and the shopping page. 
+Moreover, we also moved the list of the artist, artworks, and museums on our home page for easier access. 
+We used Javascript on the header drop down menu. Moreover, we used simple HTML and CSS to do the other basic layout and style/design of our webpage.
+
+We also used Javascript to implement the pop-up/dialogue box that shows the purchase/order form when the shopping cart and the name of the artist/artwork is clicked. 
+Lastly, we used PHP to process the purchase form submitted by the customer. 
+
+
+Nishita = Responsible for moving the list of artworks, artists and museums on the main page
+	= Responsible for adding the pop-up/dialogue boxes for when the name of the artist/artwork is clicked.
+
+Louise = Responsible for adding the pop-up/dialogue boxes when the shopping cart is clicked.
+	= Did the debugging and testing and improved some of the code
+
+Prachi = Responible for adding the shopping cart page
+	= Responsible for creating the form and coding the PHP code that processes the page.

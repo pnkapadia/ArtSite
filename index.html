@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Assignment 2</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="a2.css">
+
+<script language="javascript">
+function loadTwo(iframe1URL, iframe2URL)
+{
+	var star = document.getElementById("star");
+	star.src = iframe1URL;
+  
+	star.classList.remove("hide");
+	parent.info.location.href=iframe2URL
+ 
+}
+
+</script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="./a2.html">The Art Gallery</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="./a2.html">Home</a></li>
+      <li><a href="creators.html">About Us</a></li>
+      <li><a href="blogs.html">Blogs</a></li>
+      <li><a href="shopping.html"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+      <li>
+       
+    </ul>
+  
+
+    <div class="search-container">
+          <form action="/search.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><span class="glyphicon glyphicon-search"></span></button></form>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+<div class="container-fluid">
+  <h1 id="home" style= "text-align: center;">The Art Gallery</h1>
+  <p style= "text-align: center;"><em>Seeing art differently</em></p>
+</div>
+
+<div class="row">
+<div class="col-xs-4">
+  <div id = "listofmenus">
+  <h3>Art Works: </h3>
+  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#art">Select an Art Work<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+
+          <div class="test">
+            <li>
+              <a href="javascript:loadTwo('https://www.muralswallpaper.co.uk/app/uploads/starry-night-art-plain.jpg', 'starryinfo.html')">Starry Night</a> 
+          </li>
+        
+            <li>
+              <a href="javascript:loadTwo('https://www.fulcrumgallery.com/product-images/P820354-10/michelangelo-creation-of-man.jpg', 'creationinfo.html')">The Creation of Man</a>
+            </li>
+            
+            <li>
+              <a href="javascript:loadTwo('https://media1.britannica.com/eb-media/24/189624-004-93915DC4.jpg', 'monainfo.html')">Mona Lisa</a>
+            </li>
+            
+            <li>
+              <a href="javascript:loadTwo('https://www.gannett-cdn.com/-mm-/cd33bd15897a848c56f7474cb7c853fd2e881f2c/c=180-0-4688-6001&r=537&c=0-0-534-712/local/-/media/Cincinnati/Cincinnati/2014/08/22/1408740930000-American-GothicA.jpg', 'gothicinfo.html')">American Gothic</a>
+            </li>
+            
+            <li>
+              <a href="javascript:loadTwo('https://qph.ec.quoracdn.net/main-qimg-ffd1dc0f36bdd4fbc50f3623ea292800-c', 'screaminfo.html')">The Scream</a>
+            </li>
+
+          </div>
+          
+          </ul>
+  </li>
+        <br>
+
+        <h3>Artists: </h3>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#artist">Select an Artist<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+
+            <div class="test">
+            <li>
+              <a href="javascript:loadTwo('https://www.artble.com/imgs/3/2/c/55784/vincent_van_gogh.jpg', 'gogh.html')">Vincent van Gogh</a>
+            </li>
+            
+            <li>
+              <a href="javascript:loadTwo('https://media1.britannica.com/eb-media/46/75046-004-E437D9A2.jpg', 'mike.html')">Michelangelo</a>
+            </li>
+
+            <li>
+              <a href="javascript:loadTwo('http://www.leonardodavinci.net/images/leonardo-da-vinci.jpg', 'davinci.html')">Leonardo da Vinci</a>
+            </li>
+            
+            <li>
+              <a href="javascript:loadTwo('https://cdn.thinglink.me/api/image/621712957130145793/1240/10/scaletowidth', 'wood.html')">Grant Wood</a>
+            </li>
+            
+            <li>
+              <a href="javascript:loadTwo('https://s-media-cache-ak0.pinimg.com/originals/e6/d1/e5/e6d1e5343c5b3cec2f11ddc716a57cae.jpg', 'munch.html')">Edvard Munch</a>
+            </li>
+
+            </div>
+
+          </ul>
+        </li>
+        <br>
+
+        <h3>Museum: </h3>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#art">Select a Museum<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+
+          <div class="test">
+            <li>
+              <a href="javascript:loadTwo('https://usaartnews.com/wp-content/uploads/moma-the-museum-of-modern-art-new-york-entrance.jpg', 'modern.html')">Museum of Modern Art</a> 
+            </li>
+        
+            <li>
+              <a href="javascript:loadTwo('http://www.museivaticani.va/content/dam/museivaticani/immagini/collezioni/musei/cappella_sistina/00_00_Cappella_Sistina.png/_jcr_content/renditions/cq5dam.web.1280.1280.png', 'sistine.html')">Sistine Chapel</a>
+            </li>
+            
+            <li>
+              <a href="javascript:loadTwo('https://fr.petitsfrenchies.com/wp-content/uploads/2017/01/museedulouvre-1460x650.jpg', 'louvre.html')">Musee de Louvre</a>
+            </li>
+            
+            <li>
+              <a href="javascript:loadTwo('https://pursuitist.com/wp-content/uploads/2014/09/Art-Institute-of-Chicago-Named-The-World%E2%80%99s-Best-Museum.jpg', 'chicago.html')">Art Institute of Chicago</a>
+            </li>
+            
+            <li>
+              <a href="javascript:loadTwo('https://c2.staticflickr.com/4/3832/9165024504_7e5825d201_b.jpg', 'national.html')">National Art Gallery</a>
+            </li>
+          </div>
+          
+          </ul>
+        </li>
+
+      </div>
+    </div>    
+    <div class="col-xs-4">
+      <img src="" class="hide" id="star" width="100%" height="100%">
+    </div>
+    <div class="col-xs-4">
+      <iframe width="100%" height="300" name="info" frameborder="0" align="right" allowfullscreen></iframe>
+    </div>
+
+</div>
+</body>
+</html>
+
